@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px; 
+    background: linear-gradient(135deg, #000428, #004e92, #0db4e3, #0072ff, #8e2de2, #4a00e0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100ch;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #000; 
+    padding: 10px 20px;
+    z-index: 1000; 
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav ul li {
+    margin-left: 20px;
+    border-left: 2px solid #000; 
+    padding-left: 20px; 
+}
+
+#nav ul li:first-child {
+    border-left: none; 
+    padding-left: 0; 
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+}
+
+#nav ul li a:hover {
+    color: #009dff; 
+}
+
+main {
+    padding: 20px; 
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 2px solid #000;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1); 
+}
+
+.service-card h2 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00c6ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.service-card .btn:hover {
+    background-color: #0072ff;
+}
+
+#linha{
+    border-top: 1px solid;
+    width: 100%;
+    margin: 15px;
+}
+
+#somos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 140px;
+    margin-bottom: 50px;
+}
+
+.somos-texto{
+    width: 180px;
+    text-align: center;
+}
+
+.somos-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 50px;
+}
+
+.fotos{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 200px;
+    height: 170px;
+}
+
+.portfolio-corpo{
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20px;
+}
+
+.Nome{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+.clique{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contato{
+    display: flex;
+    float: none;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px 55px;
+    background-color: transparent;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#contato h2{
+    color: #f5f5f5;
+    font-size: 2.5;
+    margin: 2rem;
+}
+
+#contato form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contato form label{
+    color: #f5f5f5;
+    margin-bottom: 4px;
+}
+
+#contato form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+#contato form input:focus{
+    border-radius: 16px;
+}
+
+#contato form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+#contato form textarea:focus{
+    border-radius: 16px;
+}
+
+#contato form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+#contato form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+.mainObg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #101026;
+    flex-direction: column;
+}
+
+.textObg{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.paragrafoObg{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+.btnObg{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.btnObg:hover{
+    border-radius: 16px;
+}

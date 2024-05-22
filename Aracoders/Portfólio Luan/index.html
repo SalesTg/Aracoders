@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="burguer" onclick="clickMenu()">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+        <nav id="item">
+            <ul class="menus">
+                <li class="opcao"><a href='#profissional'>Objetivo profissional</a></li>
+                <li class="opcao"><a href='#acadêmica'>Formação acadêmica</a></li>
+                <li class="opcao"><a href='#experiência'>Experiência profissional</a></li>
+                <li class="opcao"><a href='#complementar'>Formação complementar</a></li>
+                <li class="opcao"><a href='#habilidades'>Habilidades profissionais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dados">
+            <img id="foto" src="./imagens/foto_curriculo.jpeg">
+            <div id="itens">
+                <p>Luan de Jesus Cortes</p>
+                <p style="padding-bottom: 20px; padding-top: 20px;">Aracaju/SE</p>
+            </div>
+        </section>
+
+        <section id="profissional">
+            <div id="estrutura">
+                <div class="retangulo1"></div>
+                <h2 class="titulos">Objetivo profissional</h2>
+                <div class="retangulo2"></div>
+            </div>
+            <div class="texto"><p>Atuar no cargo de desenvolvedor web.</p></div>
+        </section>
+        
+        <section id="acadêmica">
+            <div id="estrutura">
+                <div class="retangulo1"></div>
+                <h2 class="titulos">Formação acadêmica</h2>
+                <div class="retangulo2"></div>
+            </div>
+            <div class="texto"><p>Graduando em Análise e Desenvolvimento de Sistemas | Universidade Tiradentes - Em andamento</p></div>
+        </section>
+        
+        <section id="experiência">
+            <div id="estrutura">
+                <div class="retangulo1"></div>
+                <h2 class="titulos">Experiência profissional</h2>
+                <div class="retangulo2"></div>
+            </div>
+            <div class="texto"><p style="font-weight: bold; font-style:oblique;">Getinfo - Aracaju/SE.</p></div>
+            <div class="texto"><p>Estudante - Em andamento</p></div>
+            <div class="texto"><p>Atividades: Elaboração da documentação do projeto, criação de protótipos de baixa, média e alta 
+            fidelidade, desenvolvimento do website em React</p></div>
+        </section>
+
+        <section id="complementar">
+            <div id="estrutura">
+                <div class="retangulo1"></div>
+                <h2 class="titulos">Formação complementar</h2>
+                <div class="retangulo2"></div>
+            </div>
+            <div class="texto"><p>Java COMPLETO Programação Orientada a Objetos + Projetos - Udemy (Carga horária: 60horas) - Em andamento</p></div>
+            <div class="texto"><p>Curso de Python Completo - Danki code (Carga horária: 23 horas) - 2024</p></div>
+        </section>
+
+        <section id="habilidades">
+            <div id="estrutura">
+                <div class="retangulo1"></div>
+                <h2 class="titulos">Habilidades profissionais</h2>
+                <div class="retangulo2"></div>
+            </div>
+            <div class="texto"><p>- Comunicação</p></div>
+            <div class="texto"><p>- Trabalho em equipe</p></div>
+            <div class="texto"><p>- Resolução de problemas</p></div>
+            <div class="texto"><p>- Conhecimento em Html e CSS</p></div>
+            <div class="texto"><p>- Conhecimento em python</p></div>
+        </section>
+    </main>
+    <script>
+        function clickMenu() {
+            var item = document.getElementById("item");
+            if (item.style.display == 'block') {
+                item.style.display = 'none';
+            } else {
+                item.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

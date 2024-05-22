@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AraCoders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo da AraCoders">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#services">PRINCIPAL</a></li>
+                <li><a href="#somos">QUEM SOMOS</a></li>
+                <li><a href="#portfolio">PORTIFÓLIOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <div class="service-card">
+                <h2>Desenvolvimento Web</h2>
+                <p>Oferecemos serviços completos de desenvolvimento de websites responsivos e funcionais.</p>
+                <a href="./orçamento/HTML.html" class="btn">Pedir Orçamento</a>
+            </div>
+            <div class="service-card">
+                <h2>Design de Interface</h2>
+                <p>Criação de interfaces intuitivas e atraentes para melhor experiência do usuário.</p>
+                <a href="./orçamento/HTML.html"" class="btn">Pedir Orçamento</a>
+            </div>
+            <div class="service-card">
+                <h2>Consultorias</h2>
+                <p>Oferecemos serviços de consultoria especializada em TI para ajudar a melhorar a eficiência e o desempenho do seu negócio.</p>
+                <a href="./orçamento/HTML.html"" class="btn">Pedir Orçamento</a>
+            </div>
+
+        </section>
+
+        <div id="linha"></div>
+        
+        <section id="somos">
+            <div class="somos-texto">
+                <img src="./imagens/WhatsApp Image 2024-05-12 at 17.48.07.jpeg" class="somos-logo">
+                <p>Tiago Sales estuda no 2° período no curso superior de Ciência da computação na Universidade Tiradentes</p>
+            </div>
+            <div class="somos-texto">
+                <img src="./imagens/WhatsApp Image 2024-05-12 at 18.18.37.jpeg" class="somos-logo">
+                <p>Luan de Jesus estuda no 2° período no curso superior de Análise e Desenvolvimento de Sistemas na Universidade Tiradentes</p>
+            </div>
+            <div class="somos-texto">
+                <img src="./imagens/WhatsApp Image 2024-05-12 at 20.30.20.jpeg" class="somos-logo">
+                <p>Willian Santana estuda no 2° período no curso superior de Análise e Desenvolvimento de Sistemas na Universidade Tiradentes</p>
+            </div>
+
+        </section>
+        
+        <section id="portfolio">
+            <form class="portfolio-corpo">
+                <img src="./imagens/WhatsApp Image 2024-05-12 at 17.48.07.jpeg" class="fotos">
+                <p class="Nome">Tiago Sales</p>
+                <a href="./Portfólio Tiago/index.html"><img src="./imagens/cursor_hand_click_line_icon_235662.png" class="clique"></a>
+            </form>
+
+            <form class="portfolio-corpo">
+                <img src="./imagens/WhatsApp Image 2024-05-12 at 18.18.37.jpeg" class="fotos">
+                <p class="Nome">Luan de Jesus Cortes</p>
+                <a href="./Portfólio Luan/index.html"><img src="./imagens/cursor_hand_click_line_icon_235662.png" class="clique"></a>
+            </form>
+
+            <form class="portfolio-corpo">
+                <img src="./imagens/WhatsApp Image 2024-05-12 at 20.30.20.jpeg" class="fotos">
+                <p class="Nome">Willian Santana</p>
+                <a href="./PORTFÓLIO WILLIAN/index.html"><img src="./imagens/cursor_hand_click_line_icon_235662.png" class="clique"></a>       
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em contato!</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu Nome" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu Email" required>
+                <label>Mensagem</label>
+                <textarea type="message" rows="10" placeholder="Digite sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+    
+                <input type="hidden" name="accessKey" value="ce193ca4-6a67-485d-ba43-8c12dbfdf514">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimentos.html">
+            </form>
+    </main>
+</body>
+</html>

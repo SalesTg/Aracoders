@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Orçamento de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solicite um Orçamento</h1>
+        <form id="budgetForm">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="serviceType">Tipo de Serviço:</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="" disabled selected>Selecione um serviço</option>
+                    <option value="consultoria">Consultoria</option>
+                    <option value="desenvolvimento">Desenvolvimento</option>
+                    <option value="design">Design</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Orçamento Desejado (R$):</label>
+                <input type="number" id="budget" name="budget" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Descrição do Serviço:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="preferredDate">Data Preferida:</label>
+                <input type="date" id="preferredDate" name="preferredDate" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <p>Obrigado pelo seu pedido de orçamento! Entraremos em contato em breve.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Para mais informações, entre em contato:</p>
+        <p>Email: seuemail@dominio.com</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+    background: linear-gradient(#A7FEF9, #74FC52);
+}
+
+#dados{
+    display: flex;
+    align-items: center;
+}
+
+#foto{
+    width: 200px;
+    height: 200px;
+}
+
+#burguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+  }
+  
+  .barra {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+    transition: all 0.3s linear;
+  }
+  
+  /* Adicione esta parte para animar o menu hambúrguer */
+  #burguer.change .barra:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  #burguer.change .barra:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #burguer.change .barra:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+
+menu {
+    position: absolute;
+    right: 15px;
+    transition: 0.4s;
+}
+
+menu > ul > li>{
+    background-color: black;
+}
+
+.menus{
+    display: flex;
+    background-color: #74FC52;
+    width: 70%;
+    margin: 30px;
+    margin-bottom: 60px;
+}
+
+.opcao{
+    margin-right: 50px;
+}
+
+#item{
+    display: none;
+}
+
+#itens{
+    padding-left: 10px;
+}
+
+#estrutura{
+    display: flex;
+    margin-top: 15%;
+}
+
+.titulos{
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.retangulo1{
+    width: 38%;
+    height: 50px;
+    background: linear-gradient(to right, #D7FA05, #00FFF0)
+}
+
+.retangulo2{
+    width: 38%;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to right, #D7FA05, #00FFF0)
+}
+
+.texto{
+    margin-left: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: larger;
+}

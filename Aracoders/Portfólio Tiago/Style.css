@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    /* background: #081b08; */
+    margin: auto;
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(66, 5, 61) 3%, rgb(15, 64, 113) 38%, rgb(16, 162, 152) 68%, rgb(90, 9, 133) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+.header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #00abf0;
+}
+
+.Pagina-Inicial{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.Pagina-Inicial-conteudo{
+    max-width: 600px;
+}
+
+.Pagina-Inicial-conteudo h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.Pagina-Inicial-conteudo h3{
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.Sobre-mim{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Sobre-mim-conteudo{
+    max-width: 600px;
+}
+
+.Sobre-mim-conteudo h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.Sobre-mim-conteudo p{
+    font-size: 20px;
+}
+
+.Conhecimentos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.Conhecimentos-conteudo{
+    max-width: 600px;
+}
+
+.Conhecimentos-conteudo h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.Conhecimentos-conteudo p{
+    font-size: 20px;
+}
+
+.Habilidades{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Habilidades-conteudo{
+    max-width: 600px;
+}
+
+.Habilidades-conteudo h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.Habilidades-conteudo p{
+    font-size: 20px;
+}
+
+.Formacao{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Formacao-conteudo{
+    max-width: 600px;
+}
+
+.Formacao-conteudo h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.Formacao-conteudo p{
+    font-size: 20px;
+}
+
+.Contato{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Contato-conteudo{
+    max-width: 600px;
+}
+
+.Contato-conteudo h1, p{
+    font-size: 30px;
+    font-weight: 700;
+
+}

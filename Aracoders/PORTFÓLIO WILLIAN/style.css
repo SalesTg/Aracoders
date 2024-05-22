@@ -1,0 +1,211 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos */
+.container-header {
+    background: linear-gradient(to bottom, #0c1420, #1e2326);
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 25px;
+}
+
+.section.content {
+    border-top: 1px solid beige;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.container-header header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-header header .logo a {
+    font-size: 24px;
+    color: deepskyblue;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.container-header header .logo img {
+    width: 120px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid deepskyblue;
+}
+
+.container-header header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-right: auto;
+}
+
+.container-header header nav ul li a {
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    transition: .5s;
+}
+
+.main-header {
+    margin-top: 150px;
+}
+
+/* Paralaxe */
+main {
+    background: linear-gradient(#0c1420, #1e2326); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    color: #fff; 
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    padding: 3px 15px;
+    background: black; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    text-align: center;
+}
+
+.section.content {
+    padding: 125px;
+}
+
+/* Estilos para o menu toggle */
+.menu-toggle {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-toggle.close .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.menu-toggle.close .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.close .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -7px);
+}
+
+/* Estilos para o menu lateral */
+#nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #111;
+    padding-top: 15px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#nav.show {
+    transform: translateX(0);
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+#nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+#nav ul li a:hover {
+    background-color: #444;
+}
+.carreira {
+    margin-top: 50px;
+}
+
+.infografico {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos sejam organizados em várias linhas */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center;
+    margin-top: 20px; /* Adiciona um espaço superior para separar dos cabeçalhos */
+}
+
+.marco {
+    text-align: center;
+    width: 100%; /* Garante que os elementos ocupem toda a largura disponível */
+    padding: 10px; /* Adiciona um espaço interno para separar os elementos */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.marco .ano {
+    font-weight: bold;
+}
+
+.marco .evento {
+    margin-top: 5px;
+}
+
+/* Media queries para ajustar o layout em diferentes tamanhos de tela */
+@media screen and (min-width: 768px) {
+    .infografico {
+        justify-content: space-around; /* Espaçamento uniforme entre os elementos */
+    }
+}
+#scrollToTopBtn {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(19, 134, 172);
+    color: bisque;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    transition: opacity 1s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}

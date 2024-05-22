@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="background">
+        <button id="startButton">Start</button>
+        <audio id="bgMusic" loop>
+            <source src="musica de fundo.mp4" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const startButton = document.getElementById("startButton");
+            const bgMusic = document.getElementById("bgMusic");
+
+            startButton.addEventListener("click", function () {
+                bgMusic.play();
+                setTimeout(function() {
+                    window.location.href = "index.html";
+                }, 3000); // Delay de 3 segundos (3000 ms)
+            });
+        });
+    </script>
+</body>
+</html>
